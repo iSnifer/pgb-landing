@@ -123,7 +123,7 @@
                             </div>
                         </div>
                         <div class="step__example" id="step__example">Пример</div>
-                        <div class="step__text step__text_hidden" id="step__text_example">
+                        <div class="step__text step__text_hiddens" id="step__text_example">
                             <p>
                                 Сотрудник устроился на работу 12 января 2015, <br>
                                 23 марта уходит на работу в отпуск на 4 дня. 26&mdash;27 января ездил <br>
@@ -135,13 +135,19 @@
                                 календарных дней за фактически отработанный период:
                             </p>
                         </div>
-                        <div class="numbers numbers_hidden" id="numbers">
+                        <div class="numbers numbers_hiddens" id="numbers">
                             <div class="numbers__formula">
-                                39,3929 = 29,3&#8201;×&#8201;0 + 29,3&#8201;÷&#8201;31&#8201;×&#8201;14 + 29,3&#8201;÷&#8201;28&#8201;×&#8201;25
-                            </div>
-                            <div class="numbers__text">
-                                <span class="numbers__january">Январь</span>
-                                <span class="numbers__february">Февраль</span>
+                                <span class="numbers__item">
+                                    <span class="numbers__value">39,3929 = 29,3&#8201;×&#8201;0</span>
+                                </span> +
+                                <span class="numbers__item">
+                                    <span class="numbers__value">29,3&#8201;÷&#8201;31&#8201;×&#8201;14</span>
+                                    <span class="numbers__month">Январь</span>
+                                </span> +
+                                <span class="numbers__item">
+                                    <span class="numbers__value">29,3&#8201;÷&#8201;28&#8201;×&#8201;25</span>
+                                    <span class="numbers__month">Февраль</span>
+                                </span>
                             </div>
                         </div>
                     </div>

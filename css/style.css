@@ -449,14 +449,14 @@ body
 }
 .numbers__formula
 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1;
 }
 .numbers__january
 {
     font-size: 14px;
 
-    padding-left: 345px;
+    padding-left: 315px;
 
     color: #555f64;
 }
@@ -464,7 +464,7 @@ body
 {
     font-size: 14px;
 
-    padding-left: 150px;
+    padding-left: 145px;
 
     color: #555f64;
 }
@@ -680,6 +680,10 @@ body
     color: #fff;
     border-radius: 2px;
     background: #7ac800;
+}
+.free__button:hover
+{
+    background: #85d629;
 }
 .macbook
 {

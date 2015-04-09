@@ -826,7 +826,7 @@ body
 
     float: right;
 
-    margin-left: 15px;
+    margin-left: 145px;
 
     color: #fff;
 }
@@ -836,8 +836,6 @@ body
 }
 .footer__logo
 {
-    overflow: hidden;
-
     width: 125px;
     height: 32px;
 

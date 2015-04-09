@@ -302,10 +302,11 @@ body
 {
     font-family: 'Proxima Nova';
 
+    min-width: 1150px;
     height: 410px;
 
-    background: url('../img/header/vacation-bg.jpg') no-repeat center top;
-    background-size: 100% 410px;
+    background: url('../img/header/vacation-bg.jpg') no-repeat center center;
+    background-size: cover;
 }
 .header__text
 {
@@ -408,6 +409,10 @@ body
     font-size: 18px;
     line-height: 26px;
 }
+.step__text_hidden
+{
+    display: none;
+}
 .step__example
 {
     font-family: 'Proxima Nova Bold';
@@ -415,7 +420,11 @@ body
 
     position: relative;
 
+    display: inline-block;
+
     margin-top: 30px;
+
+    cursor: pointer;
 
     color: #00a2c4;
 }
@@ -433,6 +442,10 @@ body
     content: '';
 
     background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgMDAwMDAwMDAwP/2wBDAQEBAQEBAQIBAQICAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wAARCAAEAAYDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACv/EACEQAAECBAcAAAAAAAAAAAAAABUUFwAHExYGCBgZIyQl/8QAFQEBAQAAAAAAAAAAAAAAAAAACAn/xAAlEQABAgQEBwAAAAAAAAAAAAATEhQABAURBhUXIwMWGCEiJEL/2gAMAwEAAhEDEQA/AEFyt2y9V+Z5QLq3ZLMRciFsjjkYUuFuqXELdYYQUdUdXT+SphP1rWTkejIXYEwsd3CG/FGe/wBNiDT5ESvfRE0sG9IWtWMChW9p4joy8z+WOxt2HmLc69sBBekaP//Z');
+}
+.numbers_hidden
+{
+    display: none;
 }
 .numbers__formula
 {
@@ -483,6 +496,23 @@ body
 .formula__line
 {
     line-height: 26px;
+
+    position: relative;
+}
+.formula__line_with-line:after
+{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background: #e4e4e4;
 }
 .formula__number,
 .formula__symbol
@@ -491,7 +521,15 @@ body
 }
 .formula__symbol
 {
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+
+    padding: 0 10px;
+
     color: #1aa3c3;
+    background: #fff;
 }
 .formula__info,
 .formula__footer
@@ -553,6 +591,8 @@ body
 }
 .otpusk
 {
+    overflow: hidden;
+
     padding: 50px 0 40px;
 }
 .otpusk__title
@@ -599,9 +639,9 @@ body
 {
     float: right;
 
-    width: 378px;
+    width: 782px;
     height: 406px;
-    margin: -45px -80px 0 0;
+    margin: -45px -485px 0 0;
 
     background: url('../img/otpusk/yellow.png') no-repeat 0 0;
 }

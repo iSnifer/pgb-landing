@@ -87,7 +87,7 @@
                                 <div class="formula__line">
                                     Количество месяцев в расчетном периоде, <br>
                                     которые отработаны полностью</div>
-                                <div class="formula__line">
+                                <div class="formula__line formula__line_with-line">
                                     <span class="formula__symbol">+</span>
                                 </div>
                                 <div class="formula__line">
@@ -122,8 +122,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="step__example">Пример</div>
-                        <div class="step__text">
+                        <div class="step__example" id="step__example">Пример</div>
+                        <div class="step__text step__text_hidden" id="step__text_example">
                             <p>
                                 Сотрудник устроился на работу 12 января 2015, <br>
                                 23 марта уходит на работу в отпуск на 4 дня. 26&mdash;27 января ездил <br>
@@ -135,7 +135,7 @@
                                 календарных дней за фактически отработанный период:
                             </p>
                         </div>
-                        <div class="numbers">
+                        <div class="numbers numbers_hidden" id="numbers">
                             <div class="numbers__formula">
                                 39,3929 = 29,3×0 + 29,3÷31×14 + 29,3÷28×25
                             </div>
@@ -282,7 +282,6 @@
 
     </div>
 
-    <script type="text/javascript" src="js/libs/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/common.min.js"></script>
 
 </body>

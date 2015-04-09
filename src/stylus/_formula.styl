@@ -13,6 +13,17 @@
 
     &__line
         line-height 26px
+        position relative
+
+        &_with-line:after
+            display block
+            content ""
+            height 1px
+            background #e4e4e4
+            position absolute
+            top 40%
+            width 100%
+            z-index 1
 
     &__number,
     &__symbol
@@ -20,6 +31,11 @@
 
     &__symbol
         color #1aa3c3
+        display inline-block
+        padding 0 10px
+        background #fff
+        position relative
+        z-index 2
 
     &__info,
     &__footer
